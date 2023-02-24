@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/toolbar.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/dialog.css">
     
     
     <!-- Links -->
@@ -61,14 +62,40 @@
         
         <!-- Add Extra Components Here -->
         
+
+
+        
+        
       </div>
       
       <!-- You could add Settings/ Light/Dark mode button etc. in here at the bottom of the div -->
       
+      
     </div>
     
+    <dialog id="help-dialog">
+      <button class="control-button" id="help-close-button" onclick="closeHelpDialog()">
+        <img src="../assets/graphics/close.svg" alt="Close Window">
+      </button>
+
+      <h1 class="dialogText">
+        Circuit Designer - How to Use
+      </h1>
+      <p class="dialogText">
+        Double click on the toolbar to select a component to place down.<br>
+        Components can be moved across the grid by clicking and draging<br>
+        Double-click on a component to <b>select</b> it<br>
+        You can rotate or delete elements using the control buttons or by pressing <b>'r'</b>or <b>'Delete'</b> on the keyboard
+      </p>
+    </dialog>
+
+
+
     <div id="overlay"></div>
     
+    <button class="control-button" id="help-button" onclick="openHelpDialog()">
+      <img src="../assets/graphics/help.svg" alt="Show Help">
+    </button>
     <button class="control-button" id="rotate-button" onclick="RotateComponent()">
       <img src="../assets/graphics/rotate.svg" alt="Rotate 90deg">
     </button>
@@ -81,6 +108,7 @@
     <script type="text/javascript" src="js/grid.js"></script>
     <script type="text/javascript" src="js/initialise.js"></script>
     <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
     
     
     

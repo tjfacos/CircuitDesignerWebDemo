@@ -44,3 +44,10 @@
     z-index: -1;
     display: none;
 }
+
+#help-button {
+    display: block;
+    top: 0px;
+    right: 0px;
+
+}
